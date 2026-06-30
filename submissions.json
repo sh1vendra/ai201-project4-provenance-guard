@@ -14,5 +14,101 @@
     "attribution": "likely_human",
     "confidence": 0.191,
     "status": "under_review"
+  },
+  "06bbc5f0-8f77-4771-a9fc-96274c3874fd": {
+    "content_id": "06bbc5f0-8f77-4771-a9fc-96274c3874fd",
+    "text": "This is a test submission for rate limit testing purposes only.",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "confidence": 0.62,
+    "status": "classified"
+  },
+  "e5dad690-d785-4465-a943-f0fe504b9742": {
+    "content_id": "e5dad690-d785-4465-a943-f0fe504b9742",
+    "text": "This is a test submission for rate limit testing purposes only.",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "confidence": 0.62,
+    "status": "classified"
+  },
+  "7718a9c7-a778-41d8-84aa-463433b615b8": {
+    "content_id": "7718a9c7-a778-41d8-84aa-463433b615b8",
+    "text": "This is a test submission for rate limit testing purposes only.",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "confidence": 0.62,
+    "status": "classified"
+  },
+  "6e430cc0-7c30-4e66-9d0e-085196ecfef3": {
+    "content_id": "6e430cc0-7c30-4e66-9d0e-085196ecfef3",
+    "text": "This is a test submission for rate limit testing purposes only.",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "confidence": 0.62,
+    "status": "classified"
+  },
+  "4013d34a-440d-4d88-b512-05ae1f80e5d3": {
+    "content_id": "4013d34a-440d-4d88-b512-05ae1f80e5d3",
+    "text": "This is a test submission for rate limit testing purposes only.",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "confidence": 0.62,
+    "status": "classified"
+  },
+  "615bbc4f-5685-45db-9ca0-c7094a04f73a": {
+    "content_id": "615bbc4f-5685-45db-9ca0-c7094a04f73a",
+    "text": "This is a test submission for rate limit testing purposes only.",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "confidence": 0.62,
+    "status": "classified"
+  },
+  "519614ad-2f85-4757-85d9-f11976a78a8c": {
+    "content_id": "519614ad-2f85-4757-85d9-f11976a78a8c",
+    "text": "This is a test submission for rate limit testing purposes only.",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "confidence": 0.62,
+    "status": "classified"
+  },
+  "319ea3c5-ba1b-42cf-88a8-c83c4131bf27": {
+    "content_id": "319ea3c5-ba1b-42cf-88a8-c83c4131bf27",
+    "text": "This is a test submission for rate limit testing purposes only.",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "confidence": 0.62,
+    "status": "classified"
+  },
+  "6eae122e-7a28-4b02-b6fa-b6de5dab7d4c": {
+    "content_id": "6eae122e-7a28-4b02-b6fa-b6de5dab7d4c",
+    "text": "This is a test submission for rate limit testing purposes only.",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "confidence": 0.62,
+    "status": "classified"
+  },
+  "8d3e3b08-c06a-494b-831b-20d60209224e": {
+    "content_id": "8d3e3b08-c06a-494b-831b-20d60209224e",
+    "text": "This is a test submission for rate limit testing purposes only.",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "confidence": 0.62,
+    "status": "classified"
+  },
+  "ffd736a0-4a6d-4fe6-9c32-85b28df0936e": {
+    "content_id": "ffd736a0-4a6d-4fe6-9c32-85b28df0936e",
+    "text": "ping",
+    "creator_id": "wait",
+    "attribution": "likely_ai",
+    "confidence": 0.74,
+    "status": "classified"
+  },
+  "8f4c7704-9bd5-4f9d-8066-87c80f030ee5": {
+    "content_id": "8f4c7704-9bd5-4f9d-8066-87c80f030ee5",
+    "text": "I wrote this essay myself over several drafts.",
+    "creator_id": "appeal-test-user",
+    "attribution": "uncertain",
+    "confidence": 0.32,
+    "status": "under_review"
   }
 }

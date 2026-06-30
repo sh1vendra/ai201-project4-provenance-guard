@@ -98,5 +98,135 @@
     "appeal_reasoning": "I wrote this myself after visiting the restaurant. It is my authentic voice.",
     "supporting_evidence": "Screenshot of my notes app from that evening",
     "timestamp": "2026-06-30T20:39:41.950242+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "06bbc5f0-8f77-4771-a9fc-96274c3874fd",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "groq_score": 0.7,
+    "stylometric_score": 0.5,
+    "confidence": 0.62,
+    "timestamp": "2026-06-30T20:40:45.397115+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "e5dad690-d785-4465-a943-f0fe504b9742",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "groq_score": 0.7,
+    "stylometric_score": 0.5,
+    "confidence": 0.62,
+    "timestamp": "2026-06-30T20:40:45.699097+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "7718a9c7-a778-41d8-84aa-463433b615b8",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "groq_score": 0.7,
+    "stylometric_score": 0.5,
+    "confidence": 0.62,
+    "timestamp": "2026-06-30T20:40:45.973464+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "6e430cc0-7c30-4e66-9d0e-085196ecfef3",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "groq_score": 0.7,
+    "stylometric_score": 0.5,
+    "confidence": 0.62,
+    "timestamp": "2026-06-30T20:40:46.434795+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "4013d34a-440d-4d88-b512-05ae1f80e5d3",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "groq_score": 0.7,
+    "stylometric_score": 0.5,
+    "confidence": 0.62,
+    "timestamp": "2026-06-30T20:40:46.946133+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "615bbc4f-5685-45db-9ca0-c7094a04f73a",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "groq_score": 0.7,
+    "stylometric_score": 0.5,
+    "confidence": 0.62,
+    "timestamp": "2026-06-30T20:40:47.271490+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "519614ad-2f85-4757-85d9-f11976a78a8c",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "groq_score": 0.7,
+    "stylometric_score": 0.5,
+    "confidence": 0.62,
+    "timestamp": "2026-06-30T20:40:47.796036+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "319ea3c5-ba1b-42cf-88a8-c83c4131bf27",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "groq_score": 0.7,
+    "stylometric_score": 0.5,
+    "confidence": 0.62,
+    "timestamp": "2026-06-30T20:40:48.380335+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "6eae122e-7a28-4b02-b6fa-b6de5dab7d4c",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "groq_score": 0.7,
+    "stylometric_score": 0.5,
+    "confidence": 0.62,
+    "timestamp": "2026-06-30T20:40:48.654604+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "8d3e3b08-c06a-494b-831b-20d60209224e",
+    "creator_id": "ratelimit-test",
+    "attribution": "uncertain",
+    "groq_score": 0.7,
+    "stylometric_score": 0.5,
+    "confidence": 0.62,
+    "timestamp": "2026-06-30T20:40:48.953683+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "ffd736a0-4a6d-4fe6-9c32-85b28df0936e",
+    "creator_id": "wait",
+    "attribution": "likely_ai",
+    "groq_score": 0.9,
+    "stylometric_score": 0.5,
+    "confidence": 0.74,
+    "timestamp": "2026-06-30T20:41:47.775369+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "8f4c7704-9bd5-4f9d-8066-87c80f030ee5",
+    "creator_id": "appeal-test-user",
+    "attribution": "uncertain",
+    "groq_score": 0.2,
+    "stylometric_score": 0.5,
+    "confidence": 0.32,
+    "timestamp": "2026-06-30T20:45:46.651694+00:00"
+  },
+  {
+    "event_type": "appeal",
+    "content_id": "8f4c7704-9bd5-4f9d-8066-87c80f030ee5",
+    "creator_id": "appeal-test-user",
+    "original_attribution": "uncertain",
+    "original_confidence": 0.32,
+    "appeal_reasoning": "I wrote this myself.",
+    "supporting_evidence": null,
+    "timestamp": "2026-06-30T20:45:51.482694+00:00"
   }
 ]
