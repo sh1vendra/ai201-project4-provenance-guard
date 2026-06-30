@@ -18,6 +18,62 @@ _SYSTEM_PROMPT = (
 )
 
 
+def stylometric_signal(text: str) -> dict:
+    import re
+    import string
+
+    # --- sentence length variance ---
+    # Split on . ! ? and drop empty fragments.
+    sentences = [s.strip() for s in re.split(r"[.!?]", text) if s.strip()]
+    if len(sentences) < 2:
+        # Variance is undefined with 0 or 1 sentences; return neutral score.
+        return {"score": 0.5, "sentence_variance": None, "ttr": None, "punctuation_density": None}
+
+    word_counts = [len(s.split()) for s in sentences]
+    mean_wc = sum(word_counts) / len(word_counts)
+    variance = sum((c - mean_wc) ** 2 for c in word_counts) / len(word_counts)
+
+    # --- type-token ratio ---
+    # Strip punctuation, lowercase, split into tokens.
+    stripped = text.translate(str.maketrans("", "", string.punctuation)).lower()
+    tokens = stripped.split()
+    ttr = len(set(tokens)) / len(tokens) if tokens else 0.5
+
+    # --- punctuation density ---
+    punct_count = sum(1 for ch in text if ch in string.punctuation)
+    punct_density = punct_count / len(text) if text else 0.0
+
+    # --- normalize each sub-metric to [0, 1] and invert so AI-like -> 1 ---
+    #
+    # sentence_variance: higher variance => more human. Cap raw variance at 50
+    # (sentences rarely vary by more than ~7 words on average, 7^2 = 49).
+    # norm_var = variance / 50, clamped to [0, 1]. AI-likelihood component = 1 - norm_var.
+    norm_var = min(variance / 50.0, 1.0)
+    var_component = 1.0 - norm_var
+
+    # ttr: typical human prose sits 0.5–0.8; AI text can be lower (repetitive) or
+    # similar. Cap at 1.0; low ttr => more AI-like => component stays high.
+    # AI-likelihood component = 1 - ttr (low diversity => closer to 1).
+    ttr_component = 1.0 - min(ttr, 1.0)
+
+    # punctuation_density: AI text tends toward moderate, consistent density (~0.05–0.12).
+    # Very low (<0.03) or very high (>0.20) density is more human (informal or heavy prose).
+    # Score peaks at 1 when density is near 0.07, falls off toward 0 at extremes.
+    # Use a tent function centered at 0.07 with half-width 0.13.
+    center, half_width = 0.07, 0.13
+    punct_component = max(0.0, 1.0 - abs(punct_density - center) / half_width)
+
+    # Weighted combination: variance carries most signal, ttr next, punctuation weakest.
+    score = 0.5 * var_component + 0.35 * ttr_component + 0.15 * punct_component
+
+    return {
+        "score": round(score, 4),
+        "sentence_variance": round(variance, 4),
+        "ttr": round(ttr, 4),
+        "punctuation_density": round(punct_density, 4),
+    }
+
+
 def groq_signal(text: str) -> dict:
     try:
         client = Groq(api_key=os.environ["GROQ_API_KEY"])

@@ -6,5 +6,31 @@
     "confidence": 0.8,
     "groq_score": 0.8,
     "timestamp": "2026-06-30T20:31:58.486918+00:00"
+  },
+  {
+    "content_id": "bd10e7c0-bf52-43c7-8fe0-a4a1aa937530",
+    "creator_id": "test-user-2",
+    "attribution": "pending",
+    "confidence": 0.2,
+    "groq_score": 0.2,
+    "timestamp": "2026-06-30T20:33:58.178729+00:00"
+  },
+  {
+    "content_id": "b45c2faf-5cdf-454a-a775-156855990f0f",
+    "creator_id": "test-user-1",
+    "attribution": "pending",
+    "groq_score": 0.8,
+    "stylometric_score": 0.6308,
+    "confidence": 0.7323,
+    "timestamp": "2026-06-30T20:36:32.665008+00:00"
+  },
+  {
+    "content_id": "bf72ae49-2685-4542-be82-02f2d7437263",
+    "creator_id": "test-user-2",
+    "attribution": "pending",
+    "groq_score": 0.2,
+    "stylometric_score": 0.118,
+    "confidence": 0.1672,
+    "timestamp": "2026-06-30T20:36:32.991340+00:00"
   }
 ]
