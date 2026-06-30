@@ -32,5 +32,41 @@
     "stylometric_score": 0.118,
     "confidence": 0.1672,
     "timestamp": "2026-06-30T20:36:32.991340+00:00"
+  },
+  {
+    "content_id": "7054ad30-9659-4078-b420-46f98be60b8e",
+    "creator_id": "calib-1",
+    "attribution": "pending",
+    "groq_score": 0.8,
+    "stylometric_score": 0.3327,
+    "confidence": 0.6131,
+    "timestamp": "2026-06-30T20:37:11.904439+00:00"
+  },
+  {
+    "content_id": "6257f855-2a40-4798-abed-3f0d7cc29cae",
+    "creator_id": "calib-2",
+    "attribution": "pending",
+    "groq_score": 0.2,
+    "stylometric_score": 0.1776,
+    "confidence": 0.191,
+    "timestamp": "2026-06-30T20:37:12.177163+00:00"
+  },
+  {
+    "content_id": "efef0cef-6ede-4446-a061-e04be0657c49",
+    "creator_id": "calib-3",
+    "attribution": "pending",
+    "groq_score": 0.7,
+    "stylometric_score": 0.3233,
+    "confidence": 0.5493,
+    "timestamp": "2026-06-30T20:37:12.895042+00:00"
+  },
+  {
+    "content_id": "7c4f1364-457a-447e-8273-6e316fe67159",
+    "creator_id": "calib-4",
+    "attribution": "pending",
+    "groq_score": 0.4,
+    "stylometric_score": 0.423,
+    "confidence": 0.4092,
+    "timestamp": "2026-06-30T20:37:13.410038+00:00"
   }
 ]
