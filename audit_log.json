@@ -68,5 +68,35 @@
     "stylometric_score": 0.423,
     "confidence": 0.4092,
     "timestamp": "2026-06-30T20:37:13.410038+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "6ee60957-021b-4fb9-9761-79afbf2e993a",
+    "creator_id": "m5-calib-1",
+    "attribution": "uncertain",
+    "groq_score": 0.8,
+    "stylometric_score": 0.3327,
+    "confidence": 0.6131,
+    "timestamp": "2026-06-30T20:39:30.211375+00:00"
+  },
+  {
+    "event_type": "submission",
+    "content_id": "a94044bf-5714-416d-8cc5-17e0b202a2b8",
+    "creator_id": "m5-calib-2",
+    "attribution": "likely_human",
+    "groq_score": 0.2,
+    "stylometric_score": 0.1776,
+    "confidence": 0.191,
+    "timestamp": "2026-06-30T20:39:30.486692+00:00"
+  },
+  {
+    "event_type": "appeal",
+    "content_id": "a94044bf-5714-416d-8cc5-17e0b202a2b8",
+    "creator_id": "m5-calib-2",
+    "original_attribution": "likely_human",
+    "original_confidence": 0.191,
+    "appeal_reasoning": "I wrote this myself after visiting the restaurant. It is my authentic voice.",
+    "supporting_evidence": "Screenshot of my notes app from that evening",
+    "timestamp": "2026-06-30T20:39:41.950242+00:00"
   }
 ]
