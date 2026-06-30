@@ -1,5 +1,10 @@
-from flask import Flask, jsonify
+import uuid
+
+from flask import Flask, jsonify, request
 from dotenv import load_dotenv
+
+from logger import log_entry, get_log
+from signals import groq_signal
 
 load_dotenv()
 
@@ -9,6 +14,37 @@ app = Flask(__name__)
 @app.route("/", methods=["GET"])
 def index():
     return jsonify({"status": "ok"})
+
+
+@app.route("/submit", methods=["POST"])
+def submit():
+    body = request.get_json(force=True, silent=True) or {}
+    text = body.get("text", "")
+    creator_id = body.get("creator_id", "")
+
+    content_id = str(uuid.uuid4())
+    groq_result = groq_signal(text)
+    groq_score = groq_result["ai_likelihood"]
+
+    log_entry({
+        "content_id": content_id,
+        "creator_id": creator_id,
+        "attribution": "pending",
+        "confidence": groq_score,
+        "groq_score": groq_score,
+    })
+
+    return jsonify({
+        "content_id": content_id,
+        "attribution": "pending",
+        "confidence": groq_score,
+        "label": "Uncertain — Unable to Determine Reliably",
+    })
+
+
+@app.route("/log", methods=["GET"])
+def log():
+    return jsonify({"entries": get_log()})
 
 
 if __name__ == "__main__":
